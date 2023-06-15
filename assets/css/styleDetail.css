@@ -1,0 +1,240 @@
+@font-face {
+  font-family: "AirBnb Cereal";
+  src: url("../fonts/AirbnbCereal_W_Bd.otf") format("truetype");
+  /* font-family: "AirBnb Cereal Lt";
+    src: url("../fonts/AirbnbCereal_W_Lt.otf") format("truetype"); */
+}
+@font-face {
+  font-family: "AirBnb Cereal Lt";
+  src: url("../fonts/AirbnbCereal_W_Lt.otf") format("truetype");
+}
+@font-face {
+  font-family: "AirBnb Cereal Md";
+  src: url("../fonts/AirbnbCereal_W_Bk.otf") format("truetype");
+}
+
+* {
+  font-family: "AirBnb Cereal", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+nav {
+  padding: 30px;
+  /* background-color: antiquewhite; */
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  margin-left: 50px;
+  justify-content: flex-start;
+}
+
+.navbar li {
+  margin-left: 100px;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.navbar li a {
+  font-family: "AirBnb Cereal";
+  text-decoration: none;
+  color: #2e266f;
+}
+
+/* ! colorbox */
+.container-side {
+  display: flex;
+  justify-content: flex-start;
+}
+.sideBlock {
+  background-color: #efc81a;
+  position: absolute;
+  z-index: -9999;
+  width: 50px;
+  height: 100vh;
+}
+.content {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* ! main */
+.main-content {
+  flex: 2;
+  /* background-color: bisque; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: left; */
+  padding-top: 20px;
+  padding-left: 150px;
+  height: 86vh;
+}
+.main {
+  width: 700px;
+  height: 400px;
+  background-image: url("../img/detailMain.png");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* background-color: lightgreen; */
+}
+.main img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 18px;
+  height: 18px;
+  padding: 10px;
+}
+
+.bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 70%;
+  height: 5px;
+  background-color: red;
+}
+
+.main-text {
+  /* background-color: lightgreen; */
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.main-text h3 {
+  line-height: 30px;
+  padding-bottom: 10px;
+}
+
+.main-text h5 {
+  color: #aaaaaa;
+}
+
+/* ! sub-main */
+.sub-main {
+  flex: 1;
+  height: 89vh;
+  /* background-color: lightgreen; */
+}
+
+.sidecontent .content {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin-bottom: 10px;
+}
+h4 {
+  padding-left: 18px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.step1 {
+  background-image: url(../img/detail1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 219px;
+  height: 105px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+}
+.stepcontain {
+  flex: 1;
+}
+.step1 h5 {
+  /* background-color: azure; */
+  padding: 10px;
+  font-family: "AirBnb Cereal Lt";
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.timecontain {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.timestamp {
+  /* background-color: beige; */
+  padding: 2px;
+  margin: 5px;
+  width: 30px;
+
+  color: #f8f8f8;
+  font-family: "AirBnb Cereal Lt";
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  text-align: center;
+}
+.steptext {
+  display: flex;
+  flex-direction: column;
+  width: 319px;
+  line-height: 20px;
+}
+.steptext h3 {
+  font-size: 13px;
+}
+.steptext h5 {
+  font-size: 10px;
+  color: #aaaaaa;
+}
+
+/* ! step2  */
+.step2 {
+  background-image: url(../img/detail2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 219px;
+  height: 105px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+}
+.step2 h5 {
+  /* background-color: azure; */
+  padding: 10px;
+  font-family: "AirBnb Cereal Lt";
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+/* ! step3 */
+.step3 {
+  background-image: url(../img/detail2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 219px;
+  height: 105px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+}
+.step3 h5 {
+  /* background-color: azure; */
+  padding: 10px;
+  font-family: "AirBnb Cereal Lt";
+  color: #fff;
+  letter-spacing: 0.5px;
+}

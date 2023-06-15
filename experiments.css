@@ -1,0 +1,28 @@
+input[type="checkbox"] {
+  -webkit-appearance: none; /* Menghilangkan tampilan default browser */
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #efc81a;
+  border-radius: 4px;
+  outline: none; /* Menghilangkan outline saat checkbox di-focus */
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 11px;
+  background-color: #efc81a;
+  border-radius: 2px;
+  transition: background-color 0.2s;
+}
+
+input[type="checkbox"]:checked::before {
+  background-color: white;
+  content: "✔"; /* Tanda centang */
+  font-size: 10px;
+  text-align: center;
+  line-height: 12px;
+}
