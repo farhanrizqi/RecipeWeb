@@ -1,16 +1,17 @@
 @font-face {
   font-family: "AirBnb Cereal";
-  src: url("../fonts/AirbnbCereal_W_Bd.otf") format("truetype");
-  /* font-family: "AirBnb Cereal Lt";
-  src: url("../fonts/AirbnbCereal_W_Lt.otf") format("truetype"); */
+  src: url("../fonts/AirbnbCereal_W_Lt.otf") format("opentype");
+  font-weight: 300;
 }
 @font-face {
-  font-family: "AirBnb Cereal Lt";
-  src: url("../fonts/AirbnbCereal_W_Lt.otf") format("truetype");
+  font-family: "AirBnb Cereal";
+  src: url("../fonts/AirbnbCereal_W_Md.otf") format("opentype");
+  font-weight: 500;
 }
 @font-face {
-  font-family: "AirBnb Cereal Md";
-  src: url("../fonts/AirbnbCereal_W_Bk.otf") format("truetype");
+  font-family: "AirBnb Cereal";
+  src: url("../fonts/AirbnbCereal_W_Bd.otf") format("opentype");
+  font-weight: 700;
 }
 
 * {
@@ -18,7 +19,16 @@
   padding: 0;
   margin: 0;
 }
-
+.primarycontainer {
+  background-color: lightblue;
+  width: 1349px;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  /* box-sizing: border-box; */
+}
 button {
   cursor: pointer;
 }
@@ -29,13 +39,13 @@ nav {
 .navbar {
   display: flex;
   list-style: none;
-  margin-left: 50px;
+  margin-left: 5%;
   justify-content: flex-start;
 }
 
 .navbar li {
-  margin-left: 100px;
-  margin-right: 10px;
+  margin-left: 3%;
+  margin-right: 5%;
   font-size: 15px;
 }
 
@@ -48,22 +58,23 @@ nav {
 /* ! title */
 .hero {
   width: 100%;
-  height: 100vh;
+  height: auto;
   /* background-color: lightsalmon; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10%;
+  margin-top: 8%;
 }
 
 .title h1 {
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 10%;
   text-align: center;
   font-family: "AirBnb Cereal";
   /* font-style: normal;
   font-weight: 500; */
   font-size: 45px;
-  line-height: 100px;
+  /* line-height: 100px; */
   /* identical to box height, or 125% */
 
   color: #2e266f;
@@ -93,7 +104,7 @@ nav {
   /* justify-content: center;
   align-items: center; */
   border-radius: 5px;
-  margin: 10px;
+  margin: 1.5%;
 }
 .like {
   display: flex;
@@ -106,7 +117,7 @@ nav {
   align-items: center; */
   border: 1px solid #eec302;
   border-radius: 5px;
-  margin: 10px 10px 10px 5px;
+  margin: 1.5%;
 }
 
 .bookmark img {
@@ -123,28 +134,32 @@ nav {
 /* ! recipe */
 .ingredients {
   width: 100%;
-  height: 80vh;
+  height: auto;
+  margin-bottom: 10%;
   /* background-color: lightblue; */
 }
 .ingredients .title {
-  margin-left: 250px;
+  padding-left: 18%;
   /* background-color: #efc81a; */
 }
 .title h3 {
-  font-family: "AirBnb Cereal Md";
+  font-family: "AirBnb Cereal";
+  font-weight: 500;
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
   color: #3f3a3a;
 }
 .recipe {
+  background-color: lightcoral;
   /* display: flex; */
-  width: 550px;
-  margin-left: 263px;
+  width: auto;
+  padding-left: 20%;
 }
 .listrecipe li {
-  font-family: "AirBnb Cereal Lt";
+  font-family: "AirBnb Cereal";
+  font-weight: 300;
   font-size: 22px;
-  padding-bottom: 10px;
+  padding-bottom: 3%;
   color: #000000;
 }
 
@@ -154,24 +169,26 @@ nav {
 /* ! video step section */
 .step {
   width: 100%;
-  height: 80vh;
-  /* background-color: lightcoral; */
+  height: auto;
+  margin-bottom: 10%;
+  background-color: lightcoral;
 }
 .step .title {
-  margin-left: 250px;
+  margin-left: 18%;
 }
 .step .title h3 {
-  font-family: "AirBnb Cereal Md";
+  font-family: "AirBnb Cereal";
+  font-weight: 500;
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
   color: #3f3a3a;
 }
 
 .play-group {
   display: flex;
+  background-color: lightgreen;
   flex-direction: column;
-  margin-left: 250px;
-  margin-top: 50px;
+  margin-left: 18%;
 }
 .play-button {
   display: flex;
@@ -179,7 +196,7 @@ nav {
   align-items: center;
   width: 250px;
   height: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 5%;
   background-color: #efc81a;
   border-radius: 10px;
   border-style: none;
@@ -188,21 +205,26 @@ nav {
 .comment-area {
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 10%;
+  background-color: lightcoral;
 }
 .comment-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: lightskyblue;
 }
 .comment-form .textarea {
-  font-family: "AirBnb Cereal Md";
+  font-family: "AirBnb Cereal";
+  font-weight: 500;
   font-size: 15px;
   background-color: #f6f5f4;
-  padding-top: 20px;
-  padding-left: 20px;
-  margin-bottom: 20px;
+  padding-top: 5%;
+  padding-left: 5%;
   border-style: none;
   outline: none;
+  width: 90%;
+  height: 60%;
 }
 .comment-form .send {
   font-family: "Inter";
@@ -212,8 +234,8 @@ nav {
   color: #fff;
 
   margin: auto;
-  width: 300px;
-  height: 50px;
+  width: 35%;
+  height: 10%;
   background-color: #efc81a;
   border-radius: 5px;
   border-style: none;
@@ -221,14 +243,10 @@ nav {
 
 /* !comment-content section */
 .comment-content {
-  width: 100%;
-  height: 50vh;
   display: flex;
   flex-direction: column;
-  margin-left: 250px;
-}
-.comment-content .title {
-  margin-bottom: 20px;
+  margin-left: 18%;
+  margin-bottom: 10%;
 }
 
 .comment-content .content {
@@ -238,29 +256,32 @@ nav {
 .content img {
   width: 50px;
   height: 50px;
-  padding-right: 20px;
+  padding-right: 2%;
 }
 .comment-user .comment1 h6 {
   font-size: 15px;
 }
 .comment-user .comment2 h6 {
-  font-family: "AirBnb Cereal Lt";
+  font-family: "AirBnb Cereal";
+  font-weight: 300;
   font-size: 15px;
 }
 
 /* ! footer */
 .content5 {
   width: 100%;
-  height: 70vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   background-color: #efc81a;
   justify-content: center;
   align-items: center;
+  padding-top: 5%;
 }
 .wrapper5 {
-  /* background-color: aqua; */
-  margin: auto;
+  background-color: aqua;
+  margin-left: auto;
+  margin-right: auto;
 }
 .wrapper5 h1 {
   color: #2e266f;
@@ -268,9 +289,10 @@ nav {
   /* text-align: center; */
 }
 .wrapper5 h5 {
-  margin-top: 30px;
+  margin-top: 10%;
   color: #707070;
   text-align: center;
+  margin-bottom: 20%;
 }
 
 .foot ul {
@@ -285,5 +307,96 @@ nav {
   font-size: 15px;
   font-weight: 500;
   color: #707070;
-  margin: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media screen and (992px <= width <= 1280px) {
+  .primarycontainer {
+    width: 1280px;
+  }
+}
+@media screen and (800px <= width <= 991px) {
+  .primarycontainer {
+    width: 991px;
+  }
+  .ingredients .title {
+    padding-left: 15%;
+  }
+  .recipe {
+    padding-left: 17%;
+  }
+  .step .title {
+    margin-left: 15%;
+  }
+  .play-group {
+    margin-left: 15%;
+  }
+}
+@media screen and (360px <= width <= 799px) {
+  .primarycontainer {
+    width: 799px;
+  }
+  nav {
+    padding-left: 2%;
+  }
+  .picture {
+    width: 300px;
+    height: 195px;
+  }
+  .ingredients .title {
+    padding-left: 15%;
+  }
+  .title h3 {
+    font-size: 35px;
+  }
+  .listrecipe li {
+    font-size: 19px;
+  }
+  .recipe {
+    padding-left: 17%;
+  }
+  .step .title {
+    margin-left: 15%;
+  }
+  .step .title h3 {
+    font-size: 35px;
+  }
+  .play-group {
+    margin-left: 15%;
+  }
+  .play-button {
+    width: 200px;
+    height: 40px;
+  }
+  .play-button img {
+    width: 100px;
+    height: 30px;
+  }
+  .comment-form .textarea {
+    width: 80%;
+    height: 50%;
+    border-radius: 2%;
+  }
+  .comment-form .send {
+    width: 50%;
+  }
+  .comment-area {
+    margin-bottom: 5%;
+  }
+  .comment-content {
+    margin-left: 5%;
+  }
+  .comment-content .title h3 {
+    font-size: 35px;
+  }
+  .wrapper5 h1 {
+    font-size: 35px;
+  }
+  .foot li {
+    font-size: 13px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }

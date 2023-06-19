@@ -26,3 +26,16 @@ input[type="checkbox"]:checked::before {
   text-align: center;
   line-height: 12px;
 }
+
+/* ? before */
+/* .rightnav li a::before {
+  background-color: lightgreen;
+  content: "";
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon.png");
+  background-size: cover;
+  transform: translate(-20%, 0%);
+} */
+/* ? before end */
