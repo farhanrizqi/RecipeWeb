@@ -175,7 +175,7 @@ li a {
   align-items: center;
   margin-left: 16%;
   margin-bottom: 5%;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .pageTitle h2 {
@@ -333,7 +333,7 @@ li a {
   align-items: center;
   margin-left: 8%;
   margin-bottom: 10%;
-  background-color: red;
+  /* background-color: red; */
 }
 .pageTitleRecipe h2 {
   color: #3f3a3a;
@@ -355,7 +355,7 @@ li a {
   padding-left: 5%;
   padding-right: 5%;
   justify-items: center;
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
 }
 
 .content4 .gallery .item {
