@@ -97,7 +97,7 @@ li a {
   display: flex;
   width: 100%;
   height: auto;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
   /* background-color: red; */
 }
 .content1 .slide1 {
@@ -448,9 +448,9 @@ li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: #efc81a;
-   */
-  background-color: aqua;
+  background-color: #efc81a;
+
+  /* background-color: aqua; */
   padding-top: 5%;
   padding-bottom: 2%;
 }
