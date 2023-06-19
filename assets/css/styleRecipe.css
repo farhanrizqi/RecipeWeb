@@ -20,7 +20,7 @@
   margin: 0;
 }
 .primarycontainer {
-  background-color: lightblue;
+  /* background-color: lightblue; */
   width: 1349px;
   max-width: 100%;
   height: auto;
@@ -90,7 +90,7 @@ nav {
   background-size: contain;
   width: 696px;
   height: 450px;
-  background-color: aqua;
+  /* background-color: aqua; */
   border-radius: 10px;
 }
 
@@ -150,7 +150,7 @@ nav {
   color: #3f3a3a;
 }
 .recipe {
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
   /* display: flex; */
   width: auto;
   padding-left: 20%;
@@ -171,7 +171,7 @@ nav {
   width: 100%;
   height: auto;
   margin-bottom: 10%;
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
 }
 .step .title {
   margin-left: 18%;
@@ -186,7 +186,7 @@ nav {
 
 .play-group {
   display: flex;
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   flex-direction: column;
   margin-left: 18%;
 }
@@ -206,13 +206,13 @@ nav {
   display: flex;
   justify-content: center;
   margin-bottom: 10%;
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
 }
 .comment-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: lightskyblue;
+  /* background-color: lightskyblue; */
 }
 .comment-form .textarea {
   font-family: "AirBnb Cereal";
@@ -279,7 +279,7 @@ nav {
   padding-top: 5%;
 }
 .wrapper5 {
-  background-color: aqua;
+  /* background-color: aqua; */
   margin-left: auto;
   margin-right: auto;
 }

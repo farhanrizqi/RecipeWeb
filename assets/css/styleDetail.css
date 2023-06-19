@@ -20,16 +20,12 @@
   margin: 0;
 }
 .primarycontainer {
-  width: 1349px;
+  width: 100vw;
+  max-width: 100%;
   height: auto;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  box-sizing: border-box;
-}
-.content {
-  width: 100%;
-  height: auto;
 }
 
 button {
@@ -272,9 +268,6 @@ h4 {
     /* background-color: antiquewhite; */
     width: 100%;
   }
-  .sideBlock {
-    height: 111%;
-  }
   .content {
     flex-direction: column;
   }
@@ -301,7 +294,6 @@ h4 {
   }
   .sideBlock {
     width: 6%;
-    height: 125%;
   }
   .main-content {
     padding-left: 12%;
