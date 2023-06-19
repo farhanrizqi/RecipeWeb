@@ -22,7 +22,6 @@
 .primarycontainer {
   width: 100vw;
   max-width: 100%;
-  height: auto;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
@@ -56,10 +55,7 @@ nav {
 }
 
 /* ! colorbox */
-.container-side {
-  display: flex;
-  justify-content: flex-start;
-}
+
 .sideBlock {
   background-color: #efc81a;
   position: absolute;
